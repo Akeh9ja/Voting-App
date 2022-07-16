@@ -21,3 +21,4 @@ Voting Page
 ## Authors
 - [Akeh Emmanuel Unimke](https://github.com/Akeh9ja)
 - [Enya Elvis](https://github.com/enyasystem)
+- [Ezak Victory](https://github.com/Ezakvictory)
