@@ -170,7 +170,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NY: {
       name: "New York",
@@ -974,7 +978,7 @@ function solution() {
             edwardScore.innerText = ++scoreEdward;
             edwardScore.setAttribute('id', 'attr');
             ProgressBarVisibilityOne.setAttribute('class', 'visibile');
-            document.getElementById('inner-bar-1').value = edwardBar + 1;
+            document.getElementById('inner-bar-1').value = edwardBar + 0.042;
             simplemaps_usmap_mapdata.state_specific[id].contest.edward += 1;
             console.log(simplemaps_usmap_mapdata.state_specific[id].contest.edward)
           }else {
@@ -987,7 +991,7 @@ function solution() {
               elonScore.innerText = ++scoreElon;
               elonScore.setAttribute('id', 'attr');
               ProgressBarVisibilityTwo.setAttribute('class', 'visible');
-              document.getElementById('inner-bar-2').value = elonBar + 1;
+              document.getElementById('inner-bar-2').value = elonBar + 0.042;
               simplemaps_usmap_mapdata.state_specific[id].contest.elon += 1;
               console.log(simplemaps_usmap_mapdata.state_specific[id].contest.elon)
           }  else {
