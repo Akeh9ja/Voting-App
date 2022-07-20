@@ -105,7 +105,6 @@ var simplemaps_usmap_mapdata= {
       color: "default",
       hover_color: "default",
       url: "default",
-      votes: 0,
       contest: {
         elon: 0,
         edward: 0,
@@ -117,6 +116,10 @@ var simplemaps_usmap_mapdata= {
       color: "default",
       hover_color: "default",
       url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     FL: {
       name: "Florida",
@@ -124,6 +127,10 @@ var simplemaps_usmap_mapdata= {
       color: "default",
       hover_color: "default",
       url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NH: {
       name: "New Hampshire",
@@ -152,7 +159,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     RI: {
       name: "Rhode Island",
@@ -166,56 +177,88 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     PA: {
       name: "Pennsylvania",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NJ: {
       name: "New Jersey",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     DE: {
       name: "Delaware",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MD: {
       name: "Maryland",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     VA: {
       name: "Virginia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     WV: {
       name: "West Virginia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     OH: {
       name: "Ohio",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     IN: {
       name: "Indiana",
@@ -229,49 +272,77 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     CT: {
       name: "Connecticut",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     WI: {
       name: "Wisconsin",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NC: {
       name: "North Carolina",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     DC: {
       name: "District of Columbia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MA: {
       name: "Massachusetts",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     TN: {
       name: "Tennessee",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     AR: {
       name: "Arkansas",
@@ -285,14 +356,22 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     GA: {
       name: "Georgia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     SC: {
       name: "South Carolina",
@@ -307,14 +386,22 @@ var simplemaps_usmap_mapdata= {
       color: "default",
       zoomable: "no",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     AL: {
       name: "Alabama",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     LA: {
       name: "Louisiana",
@@ -328,21 +415,33 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     IA: {
       name: "Iowa",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MN: {
       name: "Minnesota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     OK: {
       name: "Oklahoma",
@@ -356,14 +455,22 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NM: {
       name: "New Mexico",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     KS: {
       name: "Kansas",
@@ -377,35 +484,55 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     SD: {
       name: "South Dakota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     ND: {
       name: "North Dakota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     WY: {
       name: "Wyoming",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MT: {
       name: "Montana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     CO: {
       name: "Colorado",
@@ -419,21 +546,33 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     AZ: {
       name: "Arizona",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     NV: {
       name: "Nevada",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     OR: {
       name: "Oregon",
@@ -447,68 +586,44 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     CA: {
       name: "California",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MI: {
       name: "Michigan",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     ID: {
       name: "Idaho",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
-    },
-    GU: {
-      name: "Guam",
-      description: "default",
-      color: "default",
-      hover_color: "default",
       url: "default",
-      hide: "yes"
-    },
-    VI: {
-      name: "Virgin Islands",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
-    },
-    PR: {
-      name: "Puerto Rico",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
-    },
-    AS: {
-      name: "American Samoa",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
-    },
-    MP: {
-      name: "Northern Mariana Islands",
-      description: "default",
-      color: "default",
-      hover_color: "default",
-      url: "default",
-      hide: "yes"
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     }
   },
   locations: {
@@ -850,45 +965,43 @@ function solution() {
     let contestant = document.forms.contestants;
     let edwardBar = document.getElementById('inner-bar-1').value;
     let elonBar = document.getElementById('inner-bar-2').value;
-    let totalVotesPerStates = simplemaps_usmap_mapdata.state_specific[id].votes
         // Checking the input state to match
       if(simplemaps_usmap_mapdata.state_specific[id].name === state.value) {
         //condition to check for the value of who they're voting for and increment
-        
         if(contestant.value === 'edward'){
-          if(scoreEdward <= 49) {
-            if(scoreEdward + scoreElon <= 49) {
-              let ProgressBarVisibilityOne = document.getElementById('inner-bar-1');
-              edwardScore.innerText = ++scoreEdward;
-              edwardScore.setAttribute('id', 'attr');
-              ProgressBarVisibilityOne.setAttribute('class', 'visibile');
-              document.getElementById('inner-bar-1').value = edwardBar + 1;
-            } else {
-              errorMessage2.innerText = 'total number of vote per state reached';
-              }
-          } 
-        }
+          if(simplemaps_usmap_mapdata.state_specific[id].contest.edward + simplemaps_usmap_mapdata.state_specific[id].contest.elon <= 49) {
+            let ProgressBarVisibilityOne = document.getElementById('inner-bar-1');
+            edwardScore.innerText = ++scoreEdward;
+            edwardScore.setAttribute('id', 'attr');
+            ProgressBarVisibilityOne.setAttribute('class', 'visibile');
+            document.getElementById('inner-bar-1').value = edwardBar + 1;
+            simplemaps_usmap_mapdata.state_specific[id].contest.edward += 1;
+            console.log(simplemaps_usmap_mapdata.state_specific[id].contest.edward)
+          }else {
+              errorMessage2.innerText = 'total number of votes per state reached';
+           } 
+        } 
         if(contestant.value === 'elon') {
-          let ProgressBarVisibilityTwo = document.getElementById('inner-bar-2');
-          if(scoreElon <= 49) { 
-            if(scoreElon + scoreEdward <= 49) {
+          if(simplemaps_usmap_mapdata.state_specific[id].contest.elon + simplemaps_usmap_mapdata.state_specific[id].contest.edward <= 49) { 
+              let ProgressBarVisibilityTwo = document.getElementById('inner-bar-2');
               elonScore.innerText = ++scoreElon;
               elonScore.setAttribute('id', 'attr');
               ProgressBarVisibilityTwo.setAttribute('class', 'visible');
               document.getElementById('inner-bar-2').value = elonBar + 1;
-            } else {
+              simplemaps_usmap_mapdata.state_specific[id].contest.elon += 1;
+              console.log(simplemaps_usmap_mapdata.state_specific[id].contest.elon)
+          }  else {
                 errorMessage2.innerText = 'total number of vote per state reached'; 
-              }         
-          }
+            }           
         }
-        if(scoreEdward > scoreElon) {
+        if(simplemaps_usmap_mapdata.state_specific[id].contest.edward > simplemaps_usmap_mapdata.state_specific[id].contest.elon) {
           
           simplemaps_usmap_mapdata.state_specific[id].color = '#34AD54';
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + scoreEdward +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.edward +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
           simplemaps_usmap.refresh();
-        } else if(scoreElon > scoreEdward) {
+        } else if(simplemaps_usmap_mapdata.state_specific[id].contest.elon > simplemaps_usmap_mapdata.state_specific[id].contest.edward) {
           simplemaps_usmap_mapdata.state_specific[id].color = 'blue';
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + scoreElon + ' votes';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.elon + ' votes';
           simplemaps_usmap.refresh();
         } else {
           simplemaps_usmap_mapdata.state_specific[id].color = 'default';
