@@ -269,7 +269,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     IL: {
       name: "Illinois",
@@ -353,7 +357,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MO: {
       name: "Missouri",
@@ -382,7 +390,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     KY: {
       name: "Kentucky",
@@ -412,7 +424,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     MS: {
       name: "Mississippi",
@@ -452,7 +468,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     TX: {
       name: "Texas",
@@ -543,7 +563,11 @@ var simplemaps_usmap_mapdata= {
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      contest: {
+        elon: 0,
+        edward: 0,
+      },
     },
     UT: {
       name: "Utah",
