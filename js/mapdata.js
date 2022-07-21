@@ -1004,7 +1004,6 @@ function solution() {
             ProgressBarVisibilityOne.setAttribute('class', 'visibile');
             document.getElementById('inner-bar-1').value = edwardBar + 0.042;
             simplemaps_usmap_mapdata.state_specific[id].contest.edward += 1;
-            console.log(simplemaps_usmap_mapdata.state_specific[id].contest.edward)
           }else {
               errorMessage2.innerText = 'total number of votes per state reached';
            } 
@@ -1017,7 +1016,6 @@ function solution() {
               ProgressBarVisibilityTwo.setAttribute('class', 'visible');
               document.getElementById('inner-bar-2').value = elonBar + 0.042;
               simplemaps_usmap_mapdata.state_specific[id].contest.elon += 1;
-              console.log(simplemaps_usmap_mapdata.state_specific[id].contest.elon)
           }  else {
                 errorMessage2.innerText = 'total number of vote per state reached'; 
             }           
