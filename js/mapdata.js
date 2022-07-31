@@ -3,7 +3,7 @@ let elonScore = document.getElementById('score-2');
 let state = document.getElementById('cities');
 let errorMessage1 = document.getElementById('er-section');
 let errorMessage2 = document.getElementById('er-section1');
-
+//Cast Vote Button
 let validityButton = document.querySelector('#button');
 
 //Validity check
@@ -990,47 +990,64 @@ function solution() {
   // Conditions to fill map color
   //looping through the data object
   for (const id in simplemaps_usmap_mapdata.state_specific) {
-    let contestant = document.forms.contestants;
-    let edwardBar = document.getElementById('inner-bar-1').value;
-    let elonBar = document.getElementById('inner-bar-2').value;
+    let contestant = document.forms.contestants; //select contestants
+    let edwardBar = document.getElementById('inner-bar-1').value; //Edward progress bar
+    let elonBar = document.getElementById('inner-bar-2').value; //Elon progress bar
         // Checking the input state to match
       if(simplemaps_usmap_mapdata.state_specific[id].name === state.value) {
         //condition to check for the value of who they're voting for and increment
         if(contestant.value === 'edward'){
-          if(simplemaps_usmap_mapdata.state_specific[id].contest.edward + simplemaps_usmap_mapdata.state_specific[id].contest.elon <= 49) {
+          // total number of votes per state
+          if(simplemaps_usmap_mapdata.state_specific[id].contest.edward + simplemaps_usmap_mapdata.state_specific[id].contest.elon <= 49) { 
             let ProgressBarVisibilityOne = document.getElementById('inner-bar-1');
+            // increment edward score
             edwardScore.innerText = ++scoreEdward;
             edwardScore.setAttribute('id', 'attr');
-            ProgressBarVisibilityOne.setAttribute('class', 'visibile');
+            ProgressBarVisibilityOne.setAttribute('class', 'visibile'); // progress bar should pop up
+            // increment edward bar by 0.042
             document.getElementById('inner-bar-1').value = edwardBar + 0.042;
+            // increment edward state score
             simplemaps_usmap_mapdata.state_specific[id].contest.edward += 1;
           }else {
+            // display error message when total number of state equals 50
               errorMessage2.innerText = 'total number of votes per state reached';
            } 
-        } 
+        }
+        // elon section 
         if(contestant.value === 'elon') {
           if(simplemaps_usmap_mapdata.state_specific[id].contest.elon + simplemaps_usmap_mapdata.state_specific[id].contest.edward <= 49) { 
               let ProgressBarVisibilityTwo = document.getElementById('inner-bar-2');
+              // increment elon main score
               elonScore.innerText = ++scoreElon;
               elonScore.setAttribute('id', 'attr');
+              // elon bar displays
               ProgressBarVisibilityTwo.setAttribute('class', 'visible');
+              // increment inner bar section by 0.042
               document.getElementById('inner-bar-2').value = elonBar + 0.042;
+              // increment elon score in state
               simplemaps_usmap_mapdata.state_specific[id].contest.elon += 1;
           }  else {
                 errorMessage2.innerText = 'total number of vote per state reached'; 
             }           
         }
+        // this functionality changes the map color
+        // checks with contestant leads by state
         if(simplemaps_usmap_mapdata.state_specific[id].contest.edward > simplemaps_usmap_mapdata.state_specific[id].contest.elon) {
-          
+          // change color if edward is winning
           simplemaps_usmap_mapdata.state_specific[id].color = '#34AD54';
+          // change description
           simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.edward +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
           simplemaps_usmap.refresh();
         } else if(simplemaps_usmap_mapdata.state_specific[id].contest.elon > simplemaps_usmap_mapdata.state_specific[id].contest.edward) {
+          // if Elon leads change the color
           simplemaps_usmap_mapdata.state_specific[id].color = 'blue';
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.elon + ' votes';
+          // change discription
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.elon + ' votes '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
           simplemaps_usmap.refresh();
         } else {
+          // default color
           simplemaps_usmap_mapdata.state_specific[id].color = 'default';
+          // change discription
           simplemaps_usmap_mapdata.state_specific[id].description = 'No one is leading yet';
           simplemaps_usmap.refresh()
         }
@@ -1043,6 +1060,7 @@ let elonOverPicture = document.getElementById('cp-photo')
 function grayscale() {
   edwardOverPicture.setAttribute('class', 'grayscale');
 }
+// remove grayscale function
 function removeGrayscale() {
   edwardOverPicture.setAttribute('class', 'vt-img');
   elonOverPicture.setAttribute('class', 'vt-img')

@@ -1,3 +1,4 @@
+//JQuery Functionality to stick the navbar when it gets to 45px
 (function ($) {
     "use strict";
     // Sticky Navbar
