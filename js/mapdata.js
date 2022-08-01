@@ -1033,24 +1033,22 @@ function solution() {
         
         // checks with contestant leads by state
         if(simplemaps_usmap_mapdata.state_specific[id].contest.edward > simplemaps_usmap_mapdata.state_specific[id].contest.elon) {
-          let gap = simplemaps_usmap_mapdata.state_specific[id].contest.edward - simplemaps_usmap_mapdata.state_specific[id].contest.elon;
           // change color if edward is winning
           simplemaps_usmap_mapdata.state_specific[id].color = '#34AD54';
           // change description
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + gap +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward: '+ simplemaps_usmap_mapdata.state_specific[id].contest.edward +' Elon: '+ simplemaps_usmap_mapdata.state_specific[id].contest.elon +'.';
           simplemaps_usmap.refresh();
         } else if(simplemaps_usmap_mapdata.state_specific[id].contest.elon > simplemaps_usmap_mapdata.state_specific[id].contest.edward) {
-          let gap = simplemaps_usmap_mapdata.state_specific[id].contest.elon - simplemaps_usmap_mapdata.state_specific[id].contest.edward;
           // if Elon leads change the color
           simplemaps_usmap_mapdata.state_specific[id].color = 'blue';
           // change discription
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + gap + ' votes '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward: '+ simplemaps_usmap_mapdata.state_specific[id].contest.edward +' Elon: '+ simplemaps_usmap_mapdata.state_specific[id].contest.elon +'.';
           simplemaps_usmap.refresh();
         } else {
           // default color
           simplemaps_usmap_mapdata.state_specific[id].color = 'default';
           // change discription
-          simplemaps_usmap_mapdata.state_specific[id].description = 'No one is leading yet';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward: '+ simplemaps_usmap_mapdata.state_specific[id].contest.edward +' Elon: '+ simplemaps_usmap_mapdata.state_specific[id].contest.elon +'.';
           simplemaps_usmap.refresh()
         }
       }
