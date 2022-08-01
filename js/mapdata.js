@@ -1010,7 +1010,7 @@ function solution() {
             simplemaps_usmap_mapdata.state_specific[id].contest.edward += 1;
           }else {
             // display error message when total number of state equals 50
-              errorMessage2.innerText = 'total number of votes per state reached';
+              errorMessage2.innerText = 'total number of votes in ' + simplemaps_usmap_mapdata.state_specific[id].name + ' reached.';
            } 
         }
         // elon section 
@@ -1027,7 +1027,7 @@ function solution() {
               // increment elon score in state
               simplemaps_usmap_mapdata.state_specific[id].contest.elon += 1;
           }  else {
-                errorMessage2.innerText = 'total number of vote per state reached'; 
+                errorMessage2.innerText = 'total number of votes in ' + simplemaps_usmap_mapdata.state_specific[id].name + ' reached.'; 
             }           
         }
         // this functionality changes the map color
