@@ -1030,19 +1030,21 @@ function solution() {
                 errorMessage2.innerText = 'total number of votes in ' + simplemaps_usmap_mapdata.state_specific[id].name + ' reached.'; 
             }           
         }
-        // this functionality changes the map color
+        
         // checks with contestant leads by state
         if(simplemaps_usmap_mapdata.state_specific[id].contest.edward > simplemaps_usmap_mapdata.state_specific[id].contest.elon) {
+          let gap = simplemaps_usmap_mapdata.state_specific[id].contest.edward - simplemaps_usmap_mapdata.state_specific[id].contest.elon;
           // change color if edward is winning
           simplemaps_usmap_mapdata.state_specific[id].color = '#34AD54';
           // change description
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.edward +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Edward leads with ' + gap +' votes in '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
           simplemaps_usmap.refresh();
         } else if(simplemaps_usmap_mapdata.state_specific[id].contest.elon > simplemaps_usmap_mapdata.state_specific[id].contest.edward) {
+          let gap = simplemaps_usmap_mapdata.state_specific[id].contest.elon - simplemaps_usmap_mapdata.state_specific[id].contest.edward;
           // if Elon leads change the color
           simplemaps_usmap_mapdata.state_specific[id].color = 'blue';
           // change discription
-          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + simplemaps_usmap_mapdata.state_specific[id].contest.elon + ' votes '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
+          simplemaps_usmap_mapdata.state_specific[id].description = 'Elon leads with ' + gap + ' votes '+ simplemaps_usmap_mapdata.state_specific[id].name +'.';
           simplemaps_usmap.refresh();
         } else {
           // default color
